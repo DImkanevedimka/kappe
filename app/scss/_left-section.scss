@@ -1,0 +1,40 @@
+.link-list {
+	display: flex;
+	flex-direction: column;
+	li {
+		min-height: 61px;
+		background-color: #2f373b;
+		background-image: linear-gradient(to top, rgba(47, 55, 59, 0), rgba(47, 55, 59, 1));
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		text-align: right;
+		a {
+			min-height: 61px;
+			text-transform: uppercase;
+			text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
+			color: white;
+			font-family: Roboto;
+			font-size: 18px;
+			font-weight: 300;
+			text-decoration: none;
+			display: block;
+			padding-right: 25px;
+			line-height: 62px;
+		}
+	}
+}
+
+.link-list li:hover{
+	background-color: rgba(26, 181, 178, 0.43);
+}
+
+.social-networks {
+	border: 1px solid #1e282b;
+	padding-top: 25px;
+}
+
+.social-list{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 25px;
+	padding-left: 50px;
+}

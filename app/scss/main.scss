@@ -1,0 +1,27 @@
+@import "left-section.scss";
+
+.wrapper {
+    background-color: red;
+    height: 1000px;
+}
+
+.left{
+    width: 300px;
+    height: 100%;
+    background-color: #242b2e;
+    float: left;
+}
+
+.right {
+    height: 100%;
+    background-color: #d2d2d2;
+}
+
+.link-list .home {
+    background-color: #1ab5b3;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+.link-list li.home:hover{
+    background-color: #1ab5b3;
+}

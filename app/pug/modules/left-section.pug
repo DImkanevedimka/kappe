@@ -1,0 +1,35 @@
+mixin link-nav(classname, link, text)
+	li(class="" + classname)
+		a(href=link)= text
+	
+mixin social-link(link,imglink)
+	li
+		a(href=link)
+			img(src=imglink, alt="")
+
+
+nav.link-list
+	ul
+		+link-nav('home','index.html','home')
+		+link-nav('work','#home.html','work')
+		+link-nav('about','#home.html','about')
+		+link-nav('blog','#home.html','blog')
+		+link-nav('sevices','#home.html','sevices')
+		+link-nav('contact','#home.html','contact')
+
+.filter
+	.filter-heading
+		img(src="", alt="")
+	ul.filter-list
+		li
+			a(href="index.html") test
+
+.social-networks
+	ul.social-list
+		+social-link('#','../../img/webicon-flickr.png')
+		+social-link('#','../../img/webicon-googleplus.png')
+		+social-link('#','../../img/webicon-twitter.png')
+		+social-link('#','../../img/webicon-pinterest.png')
+		+social-link('#','../../img/webicon-dribbble.png')
+		+social-link('#','../../img/webicon-behance.png')
+		+social-link('#','../../img/webicon-facebook.png')
