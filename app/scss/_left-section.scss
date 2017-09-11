@@ -1,3 +1,29 @@
+.logo {
+	height: 125px;
+	background-color: white;
+	text-align: center;
+	position: relative;
+	span {
+		color: #364048;
+		font-family: Roboto;
+		font-size: 29px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 125px;
+	}
+
+	a{
+		display: block;
+		text-decoration: none;
+	}
+}
+
+.logo-img {
+	position: absolute;
+	bottom: 30px;
+	left: 130px;
+}
+
 .link-list {
 	display: flex;
 	flex-direction: column;
@@ -27,8 +53,44 @@
 	background-color: rgba(26, 181, 178, 0.43);
 }
 
+.filter {
+	padding-right: 25px;
+	padding-bottom: 30px;
+	padding-top: 25px;
+}
+
+.filter-heading{
+	p {
+		text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
+		color: #1ab5b3;
+		font-family: Roboto;
+		font-size: 19px;
+		font-weight: 100;
+		text-align: right;
+		padding-bottom: 10px;
+	}
+}
+
+.filter-list {
+	text-align: right;
+	li{
+		a {
+			text-decoration: none;
+			text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
+			font-family: Roboto;
+			font-size: 13px;
+			font-weight: 300;
+			color: #6b7072;
+			padding-top: 14px;
+			display: block;
+		}
+	}
+}
+
+
+
 .social-networks {
-	border: 1px solid #1e282b;
+	border-top: 1px solid #1e282b;
 	padding-top: 25px;
 }
 
@@ -37,4 +99,14 @@
 	justify-content: space-between;
 	padding-right: 25px;
 	padding-left: 50px;
+}
+
+.footer {
+	color: #6b7072;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 100;
+	text-align: right;
+	padding-right: 25px;
+	padding-top: 23px;
 }

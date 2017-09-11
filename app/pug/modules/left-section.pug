@@ -1,12 +1,11 @@
-mixin link-nav(classname, link, text)
-	li(class="" + classname)
-		a(href=link)= text
-	
-mixin social-link(link,imglink)
-	li
-		a(href=link)
-			img(src=imglink, alt="")
+include mixins
 
+
+.logo 
+	a(href="index.html")
+		span kappe
+		.logo-img
+			img(src="../../img/for-creatives.png", alt="")
 
 nav.link-list
 	ul
@@ -19,12 +18,22 @@ nav.link-list
 
 .filter
 	.filter-heading
-		img(src="", alt="")
+		p Filter 
+			i(class="fa fa-th-large" aria-hidden="true")
+
 	ul.filter-list
 		li
-			a(href="index.html") test
+			a(href="index.html") All Works
 		li
-			a(href="index.html") test
+			a(href="index.html") web design
+		li
+			a(href="index.html") illustration
+		li
+			a(href="index.html") photography
+		li
+			a(href="index.html") wallpapers
+		li
+			a(href="index.html") brochures
 
 .social-networks
 	ul.social-list
@@ -35,3 +44,5 @@ nav.link-list
 		+social-link('#','../../img/webicon-dribbble.png')
 		+social-link('#','../../img/webicon-behance.png')
 		+social-link('#','../../img/webicon-facebook.png')
+
+p.footer © 2014 Kappe, All Rights Reserved

@@ -1,0 +1,8 @@
+mixin link-nav(classname, link, text)
+	li(class="" + classname)
+		a(href=link)= text
+	
+mixin social-link(link,imglink)
+	li
+		a(href=link)
+			img(src=imglink, alt="")
