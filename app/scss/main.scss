@@ -1,37 +1,47 @@
 @import "left-section.scss";
 
 .wrapper {
-    background-color: red;
-    height: 1000px;
+	background-color: red;
 }
 
 .left{
-    width: 300px;
-    height: 100%;
-    background-color: #242b2e;
+	width: 300px;
+	height: 100%;
+	background-color: #242b2e;
 	float: left;
 	box-shadow: 10px 0 51px rgba(0,0,0,0.6);
 }
 
 .right {
-    height: 100%;
-    background-color: #d2d2d2;
+	height: 100%;
+	background-color: #d2d2d2;
 }
 
 .link-list .home {
-    background-color: #1ab5b3;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
+	background-color: #1ab5b3;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
 }
 
 .link-list li.home:hover{
-    background-color: #1ab5b3;
+	background-color: #1ab5b3;
 }
 .portfolio {
 	display: flex;
+	flex-wrap: wrap;
 }
 .portfolio-item {
 	position: relative;
+	img {
+		display: block;
+	}
 }
+
+.portfolio-item:hover{
+	.portfolio-info-full {
+		display: block;
+	}
+}
+
 .portfolio-info-full {
 	position: absolute;
 	background-color: #2db8b7;
@@ -40,10 +50,15 @@
 	width: 100%;
 	height: 100%;
 	opacity: 0.9;
+	display: none;
 }
 
 .portfolio-info-text{
-	text-align: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	color: #fff;
 	h3 {
 		font-family: Roboto;
@@ -55,23 +70,34 @@
 		font-family: Roboto;
 		font-size: 12px;
 		font-weight: 300;
+		border-bottom: 1px solid #fff;
+		padding-top: 13px;
+		padding-bottom: 20px;
 	}
-
+	
 	.circul-block {
 		border: 1px solid #fff;
 		width: 61px;
 		height: 61px;
 		border-radius: 50%;
-		display: inline-block;
+		margin-top: 16px;
 	}
-
+	
 	a {
+		text-align: center;
 		color: #fff;
 		display: block;
 		i {
 			line-height: 61px;
 			font-size: 18px;
 			font-weight: 400;
+		}
+	}
+	
+	.circul-block:hover{
+		background-color: #fff;
+		a {
+			color: #2db8b7;	
 		}
 	}
 }

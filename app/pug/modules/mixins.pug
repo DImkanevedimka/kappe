@@ -6,3 +6,15 @@ mixin social-link(link,imglink)
 	li
 		a(href=link)
 			img(src=imglink, alt="")
+
+mixin portfolio-item(imglink, name, description, href)
+	.portfolio-item
+		.portfolio-img
+			img(src=imglink, alt="")
+		.portfolio-info-full
+			.portfolio-info-text
+				h3= name
+				p= description
+				.circul-block
+					a(href=href)
+						i(class="fa fa-arrow-right" aria-hidden="true")
