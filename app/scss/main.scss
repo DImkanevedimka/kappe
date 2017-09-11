@@ -1,20 +1,26 @@
 @import "left-section.scss";
 
 .wrapper {
-	background-color: red;
+	display: flex;
+	justify-content: space-between
 }
 
 .left{
+	flex-basis: 300px;
+	flex-grow: 0;
+	position: relative;
 	width: 300px;
 	height: 100%;
 	background-color: #242b2e;
-	float: left;
-	box-shadow: 10px 0 51px rgba(0,0,0,0.6);
+	z-index: 1;
+	box-shadow: 10px 0 51px rgba(0, 0, 0, 0.6);
 }
 
 .right {
+	flex-basis: 300px;
+	flex-grow: 5;
 	height: 100%;
-	background-color: #d2d2d2;
+	width: 100%;
 }
 
 .link-list .home {
@@ -28,6 +34,7 @@
 .portfolio {
 	display: flex;
 	flex-wrap: wrap;
+	align-content: flex-start;
 }
 .portfolio-item {
 	position: relative;
