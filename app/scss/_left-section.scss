@@ -1,5 +1,6 @@
 .logo {
 	height: 125px;
+	width: 300px;
 	background-color: white;
 	text-align: center;
 	position: relative;
@@ -28,12 +29,14 @@
 	display: flex;
 	flex-direction: column;
 	li {
+		position: relative;
 		min-height: 61px;
 		background-color: #2f373b;
 		background-image: linear-gradient(to top, rgba(47, 55, 59, 0), rgba(47, 55, 59, 1));
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 		text-align: right;
 		a {
+			position: relative;
 			min-height: 61px;
 			text-transform: uppercase;
 			text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
@@ -45,12 +48,26 @@
 			display: block;
 			padding-right: 25px;
 			line-height: 62px;
+			z-index: 1;
 		}
 	}
 }
 
-.link-list li:hover{
-	background-color: rgba(26, 181, 178, 0.43);
+.link-list li:after{
+		content: "";
+		background: none repeat scroll 0 0 #1AB5B3;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.15s linear 0s;
+    width: 0;
+}
+
+.link-list li:hover::after {
+		width: 100%;
 }
 
 .filter {
