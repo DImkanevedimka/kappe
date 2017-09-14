@@ -1,22 +1,26 @@
 @import "left-section.scss";
 
+body {
+	overflow: hidden;
+}
+
+
 .wrapper {
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
+	height: 100%;
+	align-items: stretch;
 }
 
 .left{
-	position: fixed;
-	width: 300px;
-	height: 100vh;
+	position: relative;
+	width: 300px;	
 	background-color: #242b2e;
 	z-index: 1;
 	box-shadow: 10px 0 51px rgba(0, 0, 0, 0.6);
 }
 
 .right {
-	padding-left: 300px;
-	height: 100%;
 	width: 100%;
 }
 
@@ -36,28 +40,19 @@
 .portfolio-item {
 	position: relative;
 	width: 25%;
+	overflow: hidden;
 	img {
 		width: 100%;
 		display: block;
 	}
 }
 
-.portfolio-item:hover{
-	.portfolio-info-full {
-		display: block;
-	}
-}
-
 .portfolio-info-full {
-	transition: 300ms;
 	position: absolute;
 	background-color: #2db8b7;
-	top: 0px;
-	left: 0px;
 	width: 100%;
 	height: 100%;
 	opacity: 0.9;
-	display: none;
 }
 
 .portfolio-info-text{
@@ -82,14 +77,6 @@
 		padding-bottom: 20px;
 	}
 	
-	.circul-block {
-		border: 1px solid #fff;
-		width: 61px;
-		height: 61px;
-		border-radius: 50%;
-		margin-top: 16px;
-	}
-	
 	a {
 		text-align: center;
 		color: #fff;
@@ -107,4 +94,76 @@
 			color: #2db8b7;	
 		}
 	}
+}
+
+.circul-block {
+	border: 1px solid #fff;
+	width: 61px;
+	height: 61px;
+	border-radius: 50%;
+	margin-top: 16px;
+}
+
+.contact-toggle {
+	position: fixed;
+	height: 90px;
+	width: 90px;
+	background-color: $maincolor;
+	opacity: 0.9;
+	top: 0;
+	right: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+
+
+	i {
+		font-size: 28px;
+		font-weight: 400;
+		color: #fff;
+		line-height: 61px;
+	}
+}
+
+.contact-container{
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+	right: 0;
+	top: 90px;
+	width: 283px;
+	height: 84px;
+
+	padding-top: 23px;
+	padding-bottom: 23px;
+	padding-left: 18px;
+	display: none;
+}
+
+.contact-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	p {
+		color: #fff;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 100;
+
+		i {
+			font-size: 20px;
+			font-weight: 400;
+			padding-right: 5px;
+		}
+	}
+}
+
+.contact-toggle:hover {
+	.circul-block {
+		transform: scale(0.8);
+	}
+}
+
+.toggle-on {
+	display: block;
 }

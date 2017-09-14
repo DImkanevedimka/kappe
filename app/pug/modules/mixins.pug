@@ -7,8 +7,8 @@ mixin social-link(link,imglink)
 		a(href=link)
 			img(src=imglink, alt="")
 
-mixin portfolio-item(imglink, name, description, href)
-	.portfolio-item
+mixin portfolio-item(idname, imglink, name, description, href)
+	.portfolio-item(class="" + idname)
 		.portfolio-img
 			img(src=imglink, alt="")
 		.portfolio-info-full
@@ -18,3 +18,12 @@ mixin portfolio-item(imglink, name, description, href)
 				.circul-block
 					a(href=href)
 						i(class="fa fa-arrow-right" aria-hidden="true")
+
+mixin tag-item(link, linktext)
+	.tag-item
+		a(href=link)= linktext
+
+mixin galery-item (link, imglink)
+	div 
+		a(href=link)
+			img(src=imglink, alt="")

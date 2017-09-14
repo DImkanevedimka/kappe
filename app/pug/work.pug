@@ -1,0 +1,107 @@
+extends layout/layout
+
+block link
+	link(rel="stylesheet" href="css/work.css")
+
+block title
+	| Home
+	
+block content
+	.wrapper
+		.left
+			include modules/left-section
+		.right
+
+			.left-part
+				.slider
+					div
+						img(src="../img/sliderphoto1.png", alt="")
+					div
+						img(src="../img/sliderphoto2.png", alt="")
+					div
+						img(src="../img/sliderphoto3.png", alt="")
+					div
+						img(src="../img/sliderphoto4.png", alt="")
+				
+				.text-caption
+					h3.heading  Heavy Sand - Creative Photography
+					p.first-string Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+					p Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+			
+				.full-projects
+					h3.heading  Related Projects
+					.projects
+						.project
+							img(src="../img/project1.png", alt="")
+						.project
+							img(src="../img/project2.png", alt="")
+						.project
+							img(src="../img/project3.png", alt="")
+							
+			.right-part
+				.project-info
+					h3.heading Project Info
+					.project-name
+						span 
+							i(class="fa fa-user" aria-hidden="true") 
+						a(href="#") premiumlayers
+					.project-likes 
+						span
+							i(class="fa fa-heart" aria-hidden="true") 
+						| 138 Likes
+					.project-date
+						span
+							i(class="fa fa-calendar" aria-hidden="true") 
+						| 25 December, 2013
+					.project-comments
+						span
+							i(class="fa fa-link" aria-hidden="true") 
+						a(href="#") 4 Comments	
+
+				.tags
+					h3.heading Tags
+					.tags-items
+						+tag-item("#",'web design')
+						+tag-item("#",'photography')
+						+tag-item("#",'development')
+						+tag-item("#",'php')
+						+tag-item("#",'ecommerce')
+						+tag-item("#",'graphic')
+				
+				.project-gallery
+					h3.heading Project Gallery
+					.gallery
+						+galery-item('#','../img/pi1.jpg')
+						+galery-item('#','../img/pi2.jpg')
+						+galery-item('#','../img/pi3.jpg')
+						+galery-item('#','../img/pi4.jpg')
+						+galery-item('#','../img/pi5.jpg')
+						+galery-item('#','../img/pi6.jpg')
+						+galery-item('#','../img/pi7.jpg')
+						+galery-item('#','../img/pi8.jpg')
+						+galery-item('#','../img/pi9.jpg')
+						+galery-item('#','../img/pi10.jpg')
+				
+				.project-features
+					h3.heading Project Features
+					ul
+						li
+							a(href="#") 
+								i(class="fa fa-check" aria-hidden="true")
+								|  Responsive Layout
+						li
+							a(href="#") 
+								i(class="fa fa-check" aria-hidden="true")
+								|  Font Awesome Icons
+						li
+							a(href="#") 
+								i(class="fa fa-check" aria-hidden="true")
+								|  Clean & Commented Code
+						li
+							a(href="#") 
+								i(class="fa fa-check" aria-hidden="true")
+								|  Pixel perfect Design
+						li
+							a(href="#") 
+								i(class="fa fa-check" aria-hidden="true")
+								|  Highly Customizable							

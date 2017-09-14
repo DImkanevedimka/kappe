@@ -29,7 +29,8 @@ gulp.task("sass", function(){
 gulp.task("scriptslibs", function(){
 	gulp.src([
 		"app/libs/jquery/dist/jquery.min.js",
-		"app/libs/slick/dist/slick.min.js"
+		"app/libs/slick/dist/slick.min.js",
+		'app/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js'
 		])
 	.pipe(concat("libs.min.js"))
 	.pipe(gulp.dest("app/js"))
@@ -38,7 +39,8 @@ gulp.task("scriptslibs", function(){
 gulp.task("css-libs", function(){
 	gulp.src([
 		"app/libs/slick/slick-theme.css",
-		"app/libs/slick/slick.css"
+		"app/libs/slick/slick.css",
+		"app/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css"
 		])
 	.pipe(concatCss("libs.min.css"))
 	.pipe(gulp.dest("app/css"))

@@ -5,13 +5,21 @@ html(lang="en")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		link(rel="stylesheet" href="css/reset.css")
 		link(rel="stylesheet" href="css/clearfix.css")
-		link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet")
 		link(rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css")
 		link(rel="stylesheet" href="css/libs.min.css")
-		link(rel="stylesheet" href="css/main.css")
+		block link
+			link(rel="stylesheet" href="css/main.css")
+	
 		title
 			block title
 	body
 		block content			
 
+		block scripts
+			script(type="text/javascript" src="js/libs.min.js")
+			script(type="text/javascript" src='js/jquery.nicescroll.js')
+			script(type="text/javascript" src='js/jquery.hoverdir.js')
+			script(type="text/javascript" src='js/modernizr.custom.97074.js')
+			script(type="text/javascript" src="js/common.js")
 
