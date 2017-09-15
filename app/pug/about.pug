@@ -1,0 +1,90 @@
+extends layout/layout
+
+block link
+	link(rel="stylesheet" href="css/about.css")
+
+block title
+	| About
+	
+block content
+	.wrapper
+		.left
+			include modules/left-section
+		.right
+			.left-part
+
+				.top-image
+					img(src="../img/about.jpg", alt="")
+
+				.text
+					h3.heading Who We Are
+					P This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+					P Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.	
+			
+				.our-staff
+					h3.heading Our Staff
+					.full-staff
+						+staff-item("../img/p1.jpg","John Smith", "Web Developer")
+						+staff-item("../img/p2.jpg","John Smith", "Web Developer")
+						+staff-item("../img/p3.jpg","John Smith", "Web Developer")
+						+staff-item("../img/p4.jpg","John Smith", "Web Developer")
+						+staff-item("../img/p5.jpg","John Smith", "Web Developer")
+						+staff-item("../img/p6.jpg","John Smith", "Web Developer")
+			.right-part
+				.ourskills
+					h3.heading Our Skills
+					.all-skills
+						.first-skill
+							.progress-title
+								span Website Design 
+								span.procents 89%
+							.progress-bar-holder
+								.progress-bar
+									| 89
+						.second-skill
+							.progress-title
+								span Website Development
+								span.procents 97%
+							.progress-bar-holder
+								.progress-bar
+									| 97
+						.third-skill
+							.progress-title
+								span Plugins 
+								span.procents 85%
+							.progress-bar-holder
+								.progress-bar
+									| 85
+						.third-skill
+							.progress-title
+								span Front end
+								span.procents 75%
+							.progress-bar-holder
+								.progress-bar
+									| 75
+
+				.testimonials
+					h3.heading Tesimonials
+					.whom-testi
+						.img
+							img(src="../img/testimonials.jpg", alt="")
+						.who
+							span John Smith - Web Developer
+					.testimonials-text
+						p Sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.
+
+				.services
+					h3.heading Services
+					ul
+						li
+							a(href="#") • Web Design
+						li
+							a(href="#") • Photography
+						li
+							a(href="#") • Plugin Development
+						li
+							a(href="#") • Front-end
+						li
+							a(href="#") • Design from Scratch	
+						li
+							a(href="#") • Website Maintenance	

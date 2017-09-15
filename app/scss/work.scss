@@ -150,11 +150,11 @@ body {
 }
 
 .project-info div:hover {
+
     a {
         color: $maincolor;
     }
 }
-
 
 .tags {
     padding-top: 30px;
@@ -193,6 +193,7 @@ body {
 .project-gallery{
     margin-top: 25px;
 }
+
 .gallery {
     padding-top: 15px;
     display: flex;
@@ -203,6 +204,7 @@ body {
         height: 78px;
         margin-right: 15px;
         margin-bottom: 15px;
+
         a {
             display: block;
         }
@@ -222,17 +224,19 @@ body {
 
 .project-features ul li{
     padding-top: 18px;
+
     a {
         color: #848484;
         font-size: 14px;
         font-family: Roboto;
-        font-weight: 100;
+        font-weight: 300;
         text-decoration: none;
     }
 }
 
 .project-features ul li:hover{
-    a{
+
+    a {
     color: $maincolor;
     }
 }

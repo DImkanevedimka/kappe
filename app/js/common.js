@@ -23,7 +23,7 @@ $(document).ready(function(){
         cursorborderradius: 0,
         cursorborder: "0px solid #fff"
     });
-
+    
     $('.portfolio-item').hoverdir({
         hoverElem: '.portfolio-info-full'
     });
@@ -34,5 +34,14 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows:false,
         dots: true,
-      });
-});
+    });
+    
+    $(".progress-bar").each(function(){
+        var percentage = parseInt($(this).html());
+        if(percentage > 0){
+          $(this).animate({'width':''+percentage+'%'}, 800);
+        }else{
+          $(this).css({'background':'none'}, 800);
+        }
+      })
+})

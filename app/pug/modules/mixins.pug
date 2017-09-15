@@ -27,3 +27,12 @@ mixin galery-item (link, imglink)
 	div 
 		a(href=link)
 			img(src=imglink, alt="")
+
+mixin staff-item (imglink, name, profecion)
+	.staff-item
+		.staff-img
+			img(src=imglink, alt="")
+		.staff-info
+			.info-text
+				p.name= name
+				p.profecion= profecion
