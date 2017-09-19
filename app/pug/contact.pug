@@ -1,0 +1,41 @@
+extends layout/layout
+
+block link
+	link(rel="stylesheet" href="css/contact.css")
+
+block title
+	| Contact
+	
+block content
+	.wrapper
+		.left
+			include modules/left-section
+		.right
+			iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7659.133312741653!2d30.7227291610629!3d46.48238171400818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1505593711013" width="100%" height="100%")
+
+			.getin-containet
+				.top-part
+					h3.heading Get it touch with us
+					p.top-text Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+				.send-us-full
+					h3.heading Send us a message
+					.send-us
+						.send-us-left
+							.full-form
+								.icon
+									span
+										i(class="fa fa-user" aria-hidden="true")
+								input(type="text" placeholder="name")
+							.full-form
+								.icon
+									span
+										i(class="fa fa-envelope-o" aria-hidden="true")
+								input(type="text" placeholder="e-mail")
+							.full-form
+								.icon
+									span
+										i(class="fa fa-link" aria-hidden="true")
+								input(type="text" placeholder="website")
+						.send-us-right
+							textarea(placeholder="message")
+							input(type="submit" value="send now!")

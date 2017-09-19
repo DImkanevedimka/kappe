@@ -25,7 +25,8 @@ $(document).ready(function(){
     });
     
     $('.portfolio-item').hoverdir({
-        hoverElem: '.portfolio-info-full'
+        hoverElem: '.portfolio-info-full',
+        speed: 500
     });
     
     $('.slider').slick({
@@ -44,4 +45,5 @@ $(document).ready(function(){
           $(this).css({'background':'none'}, 800);
         }
       })
+    
 })
