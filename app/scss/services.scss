@@ -1,0 +1,168 @@
+@import "left-section.scss";
+
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	align-items: stretch;
+}
+
+.left{
+	position: relative;
+	width: 300px;	
+	background-color: #242b2e;
+	z-index: 1;
+    box-shadow: 10px 0 51px rgba(0, 0, 0, 0.6);
+    padding-bottom: 300px;
+}
+
+.right {
+    border: 25px solid #b4b7b8;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.link-list .services {
+	background-color: #1ab5b3;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+.link-list li.services:hover{
+	background-color: #1ab5b3;
+}
+
+.heading {
+    color: black;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.caption {
+    color: black;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.default-text{
+    color: #a3a3a3;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.services-our{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+.services-icon{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.service-full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.border-icon{
+    height: 114px;
+    width: 114px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    transition: 0.5s;
+
+    i {
+        display: block;
+        margin: auto auto;
+        color: #000;
+        font-size: 40px;
+        transition: 0.5s;
+    }
+}
+
+.info-text{
+    text-align: center;
+}
+
+.border-icon:hover{
+    background-color: #000;
+    
+
+    i{
+        transform: rotate(360deg);
+        color: #fff;
+    }
+}
+
+.why-us{
+    padding-top: 30px;
+}
+
+
+.why-buttoms{
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #e5e5e5;
+    margin-top: 30px;
+}
+
+
+.buttom{
+    background-color: #fff;
+    max-height: 66px;
+    padding: 18px;
+    color: #000;
+    text-transform: uppercase;
+    border-right: 1px solid #e5e5e5;
+    font-family: Roboto;
+    font-weight: 300;
+    cursor: pointer;
+}
+.buttom:hover{
+    background-color: $maincolor;
+}
+.why-text-conainer{
+    border-width: 0 1px 1px 1px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    padding: 30px;
+}
+
+
+.p-padding{
+    padding-top: 10px;
+}
+.text{
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.active-buttom{
+    background-color: $maincolor;
+}

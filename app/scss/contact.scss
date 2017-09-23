@@ -18,7 +18,8 @@ body {
 	width: 300px;	
 	background-color: #242b2e;
 	z-index: 1;
-	box-shadow: 10px 0 51px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 0 51px rgba(0, 0, 0, 0.6);
+    padding-bottom: 300px;
 }
 
 .right {
@@ -26,6 +27,7 @@ body {
     position: relative;
     iframe {
         filter: grayscale(120%);
+        
     }
 }
 

@@ -1,0 +1,236 @@
+extends layout/layout
+
+block link
+	link(rel="stylesheet" href="css/blog.css")
+
+block title
+	| Blog
+	
+block content
+	.wrapper
+		.left
+			include modules/left-section
+		.right
+			.colums
+				.block-slider.block-item
+					.slider-mini
+						.slide
+							img(src="../img/2.png", alt="")
+						.slide
+							img(src="../img/3.png", alt="")
+						.slide
+							img(src="../img/4.png", alt="")
+					.text-container
+						h6.heading-mini Gallery Post Example
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013
+
+				.block-link-container.block-item
+					.block-link
+						p Another Post where you can put a link to a specific website
+						a(href="http://www.themeforest.net") http://www.themeforest.net			
+
+				.block-baner-mini.block-item
+					img(src="../img/project3.png", alt="")
+
+				.quote-container.block-item
+					.block-quote
+						p.quote-text Logic will get you from A to B. Imagination will take you everywhere.
+						p.quote-symbol “
+						p.quote-name Albert Einstein
+
+				.block-slider.block-item
+					.slider-mini
+						.slide
+							img(src="../img/13.png", alt="")
+						.slide
+							img(src="../img/14.png", alt="")
+						.slide
+							img(src="../img/15.png", alt="")
+					.text-container
+						h6.heading-mini Gallery Post Example
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013
+
+				.block-baner-mini.block-item
+					div
+						img(src="../img/10.png", alt="")
+					.link
+						a(href="#")
+							i(class="fa fa-arrow-right" aria-hidden="true")
+
+				.block-video.block-item
+					.video
+						iframe(src="https://www.youtube.com/embed/4Prc1UfuokY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+					.text-container
+						h6.heading-mini Self-hosted video post
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013
+			
+				.block-post.block-item
+					.img-s2
+						img(src="../img/sliderphoto4.png", alt="")
+					.text-container
+						h6.heading-mini Standart post format
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013	
+
+				.block-post.block-item
+					.img
+						img(src="../img/7.png", alt="")
+					.text-container
+						h6.heading-mini Standart post format
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013
+
+				.block-post.block-item
+					.img
+						img(src="../img/12.png", alt="")
+					.text-container
+						h6.heading-mini Standart Post Format
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013
+
+				.block-link-container.block-item
+					.block-link
+						p Another Post where you can put a link to a specific website
+						a(href="http://www.themeforest.net") http://www.themeforest.net	
+
+				.block-post.block-item
+					.img
+						img(src="../img/13.png", alt="")
+					.text-container
+						h6.heading-mini Standart Post Format
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013
+
+				.post-container.block-item
+					.block-post-2
+						h5 Aside Post Format
+						p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+
+				.block-video.block-item
+					.video
+						iframe(src="https://www.youtube.com/embed/bZ9qzYBEnK4" frameborder="0" allowfullscreen)
+					.text-container
+						h6.heading-mini Self-hosted video post
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013
+				
+				//- older posts
+
+				.block-baner-mini.block-item.older-post
+						div
+							img(src="../img/10.png", alt="")
+						.link
+							a(href="#")
+								i(class="fa fa-arrow-right" aria-hidden="true")
+
+				.block-video.block-item.older-post
+					.video
+						iframe(src="https://www.youtube.com/embed/4Prc1UfuokY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+					.text-container
+						h6.heading-mini Self-hosted video post
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013
+				
+				.block-post.block-item.older-post
+					.img-s2
+						img(src="../img/sliderphoto4.png", alt="")
+					.text-container
+						h6.heading-mini Standart post format
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013	
+
+				.block-post.block-item.older-post
+					.img
+						img(src="../img/7.png", alt="")
+					.text-container
+						h6.heading-mini Standart post format
+						p.text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his hands and his brain and his heart is an artist
+					.footer-mini
+						a(href="#")
+							i(class="fa fa-comment" aria-hidden="true") 
+							| 3 comments
+						span 
+							i(class="fa fa-calendar" aria-hidden="true") 
+							| Dec 19, 2013
+
+
+			.older-post-buttom
+				span Older Post
+				
+		.contact-toggle
+			.circul-block
+				i(class="fa fa-info-circle" aria-hidden="true")
+		.contact-container
+			.contact-text
+				p 
+					i(class="fa fa-phone" aria-hidden="true")
+					|9930 1234 5679
+				p
+					i(class="fa fa-envelope" aria-hidden="true")
+					|contact@domain.com
+				p 
+					i(class="fa fa-home" aria-hidden="true")
+					|street address example		

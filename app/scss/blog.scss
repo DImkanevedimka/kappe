@@ -1,0 +1,409 @@
+@import "left-section.scss";
+
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	align-items: stretch;
+}
+
+.left{
+	position: relative;
+	width: 300px;	
+	background-color: #242b2e;
+	z-index: 1;
+	box-shadow: 10px 0 51px rgba(0, 0, 0, 0.6);
+}
+
+.right {
+    width: 100%;
+    background-color: #b4b7b8;
+    padding: 25px;
+}
+
+.link-list .blog {
+	background-color: #1ab5b3;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+.link-list li.blog:hover{
+	background-color: #1ab5b3;
+}
+
+.heading-mini{
+    color: black;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 17px;
+}
+
+.colums{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.block-slider{
+    width: 294px;
+}
+
+.text-container {
+    padding: 20px;
+    border-bottom: 1px solid #e3e3e3;
+    background-color: #fff;
+}
+
+.slide {
+    height: 230px;
+    width: 100%;
+    img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.text {
+    color: #9c9c9c;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.slick-arrow {
+    height: 43px;
+    width: 43px;
+    z-index: 9999;
+}
+
+.slick-prev{
+    top:50%
+    
+}
+
+.slick-prev{
+    top:50%;
+    background:$maincolor url('../img/prev.png') no-repeat center;
+}
+
+.slick-next{
+    top: 50%;
+    right: 0;
+    background:$maincolor url('../img/next.png') no-repeat center;
+}
+
+.footer-mini{
+    background-color: #fff;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    
+    a{
+        color: #9a9a9a;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+        text-decoration: none;
+        padding-left: 15px;
+        
+        i {
+            color: #818181;
+            font-size: 14px;
+            padding-right: 10px;
+        }
+    }
+    
+    span {
+        font-weight: 300;
+        font-size: 13px;
+        color: #9a9a9a;
+        font-family: Roboto;
+        
+        i {
+            color: #818181;
+            font-size: 14px;
+            padding-right: 10px;
+            padding-left: 18px;
+        }
+    }
+}
+
+.block-baner-mini{
+    height: 262px;
+    box-sizing: border-box;
+    
+    div{
+        height: 100%;
+    }
+    
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.block-baner-mini .link {
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    
+    a {
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 61px;
+    }
+}
+
+.block-baner-mini:hover{
+    .link {
+        display: block;
+    }
+}
+
+.block-link-container{
+    height: 137px;
+}
+
+
+.block-link{
+    background-color: $maincolor;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    p {
+        color: white;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+    a{
+        color: white;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 22px;
+    }
+}
+
+
+.video{
+    width: 100%;
+    height: 184px;
+    background-color: #3a3a3a;
+    
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.img{
+    width: 100%;
+    height: 141px;
+    background-color: #3a3a3a;
+    
+    img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.img-s2{
+    width: 100%;
+    height: 316px;
+    background-color: #3a3a3a;
+    
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.block-post-2{
+    height: 100px;
+    background-color: #242b2e;
+    border-left: 15px solid $maincolor;
+    padding: 20px;
+    
+    h5 {
+        color: white;
+        font-family: Roboto;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 26px;
+        padding-bottom: 7px;
+    }
+    
+    p {
+        color: #9c9c9c;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+
+
+.block-quote{
+    height: 213px;
+    background-color: #242b2e;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+.quote-text{
+    color: white;
+    font-family: Georgia;
+    font-size: 21px;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.quote-symbol{
+    color: #1ab5b3;
+    font-family: Georgia;
+    font-size: 63px;
+    font-style: italic;
+    padding-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.quote-name{
+    color: #1ab5b3;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 60px;
+}
+
+.block-item{
+    width: 294px;
+    margin-bottom: 25px;
+}
+
+.older-post-buttom {
+    width: 183px;
+    height: 63px;
+    background-color: $maincolor;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+
+    span {
+        color: white;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 63px;
+        text-transform: uppercase;
+    }
+}
+
+.older-post {
+    display: none;
+}
+
+.circul-block {
+	border: 1px solid #fff;
+	width: 61px;
+	height: 61px;
+	border-radius: 50%;
+	margin-top: 16px;
+}
+
+.contact-toggle {
+	position: fixed;
+	height: 90px;
+	width: 90px;
+	background-color: $maincolor;
+	opacity: 0.9;
+	top: 0;
+	right: 0;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    z-index: 9999;
+
+
+	i {
+		font-size: 28px;
+		font-weight: 400;
+		color: #fff;
+		line-height: 61px;
+	}
+}
+
+.contact-container{
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+	right: 0;
+	top: 90px;
+	width: 283px;
+	height: 84px;
+
+	padding-top: 23px;
+	padding-bottom: 23px;
+	padding-left: 18px;
+	display: none;
+}
+
+.contact-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	p {
+		color: #fff;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 100;
+
+		i {
+			font-size: 20px;
+			font-weight: 400;
+			padding-right: 5px;
+		}
+	}
+}
+
+.contact-toggle:hover {
+	.circul-block {
+		transform: scale(0.8);
+	}
+}
+
+.toggle-on {
+	display: block;
+}

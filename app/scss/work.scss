@@ -21,7 +21,6 @@ body {
 }
 
 .right {
-    width: 100%;
     border: 25px solid #b4b7b8;
     display: flex;
     justify-content: space-between;
@@ -100,6 +99,7 @@ body {
 .slick-dots li.slick-active button:before{
     color: transparent;
 }
+
 
 .text-caption {
     border-bottom: 1px solid #e5e5e5;

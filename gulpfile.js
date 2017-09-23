@@ -30,7 +30,7 @@ gulp.task("scriptslibs", function(){
 	gulp.src([
 		"app/libs/jquery/dist/jquery.min.js",
 		"app/libs/slick/dist/slick.min.js"
-		])
+	])
 	.pipe(concat("libs.min.js"))
 	.pipe(gulp.dest("app/js"))
 });
@@ -39,9 +39,9 @@ gulp.task("css-libs", function(){
 	gulp.src([
 		"app/libs/slick/slick-theme.css",
 		"app/libs/slick/slick.css"
-		])
+	])
 	.pipe(concatCss("libs.min.css"))
-	.pipe(gulp.dest("app/css"))
+	.pipe(gulp.dest("app/scss"))
 });
 
 gulp.task("browser-sync", function(){
@@ -54,13 +54,13 @@ gulp.task("browser-sync", function(){
 })
 
 gulp.task('pug', function() {
-    return gulp.src('app/pug/*.pug')
-        .pipe(plumber())
-        .pipe(pug({
-            pretty: true
-        }))
-		.pipe(gulp.dest('dist'))
-		.pipe(browserSync.reload({stream: true}))
+	return gulp.src('app/pug/*.pug')
+	.pipe(plumber())
+	.pipe(pug({
+		pretty: true
+	}))
+	.pipe(gulp.dest('dist'))
+	.pipe(browserSync.reload({stream: true}))
 });
 
 
@@ -77,7 +77,7 @@ gulp.task("scripts", function(){
 });
 
 gulp.task("css", function(){
-	gulp.src("app/css/*.css")
+	gulp.src("app/scss/*.css")
 	.pipe(gulp.dest("dist/css"))
 	.pipe(browserSync.reload({stream: true}))
 });
@@ -94,21 +94,11 @@ gulp.task("video", function(){
 	.pipe(browserSync.reload({stream: true}))
 });
 
-
-/*gulp.task("clean", function() {
-    del.sync("dist")
-})
-
-gulp.task("clear", function() {
-    cache.clearAll()
-  })*/
-
-
-  gulp.task("watch", ["browser-sync", "css-libs", "css", "scriptslibs", "scripts", "sass", "fonts", "video", "img", "pug"],  function(){
-  	gulp.watch("app/scss/*.scss", ["sass"])
-  	gulp.watch("app/js/*.js", ['scripts'])
-  	gulp.watch("app/img/**/*", ['img'])
-  	gulp.watch("app/fonts/**/*", ['fonts'])
-  	gulp.watch("app/app/video/*", ['video'])
-  	gulp.watch("app/pug/**/*", ['pug'])
-  });
+gulp.task("watch", ["browser-sync", "css-libs", "css", "scriptslibs", "scripts", "sass", "fonts", "video", "img", "pug"],  function(){
+	gulp.watch("app/scss/*.scss", ["sass"])
+	gulp.watch("app/js/*.js", ['scripts'])
+	gulp.watch("app/img/**/*", ['img'])
+	gulp.watch("app/fonts/**/*", ['fonts'])
+	gulp.watch("app/app/video/*", ['video'])
+	gulp.watch("app/pug/**/*", ['pug'])
+});
