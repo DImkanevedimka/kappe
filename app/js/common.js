@@ -20,11 +20,22 @@ $(document).ready(function(){
             horizontalOrder: true
     	});
     });
+    
+    var postindex = 0
+    
+    function counter(){
+        postindex++  
+    }
 
     $('.older-post-buttom').click(function(){
-        $('.colums').find('.older-post').removeClass('older-post')
-        $('.colums').masonry( 'layout' );
+
+        counter()
+        console.log(postindex)
+        $('.colums').find('.older-post'+ postindex).removeClass('older-post'+postindex)
+        $('.colums').masonry( 'layout' )
+
     })
+
 
     $( ".contact-toggle" ).click(function() {
         $('.contact-container').toggle("slow");
