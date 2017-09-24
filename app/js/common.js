@@ -27,13 +27,10 @@ $(document).ready(function(){
         postindex++  
     }
 
-    $('.older-post-buttom').click(function(){
-
+    $('.older-post-button').click(function(){
         counter()
-        console.log(postindex)
         $('.colums').find('.older-post'+ postindex).removeClass('older-post'+postindex)
         $('.colums').masonry( 'layout' )
-
     })
 
 
