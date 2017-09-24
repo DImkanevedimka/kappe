@@ -15,8 +15,8 @@ $(document).ready(function(){
     $('.colums').imagesLoaded(function(){
     	$('.colums').masonry({
     		itemSelector: '.block-item',
-    		columnWidth: '.block-item',
-            gutter: 25,
+            columnWidth: '.block-item',
+            percentPosition: true,
             horizontalOrder: true
     	});
     });
@@ -26,13 +26,17 @@ $(document).ready(function(){
         $('.colums').masonry( 'layout' );
     })
 
-
-  
     $( ".contact-toggle" ).click(function() {
         $('.contact-container').toggle("slow");
     });
     
-    
+    $( ".toggle-nav" ).click(function() {
+        $('.link-list2').toggle("slow");
+        $('.fa-bars').toggleClass('toggle-on')
+        $('.fa-times').toggleClass('toggle-on')
+    });
+
+
     $(".filter-list li").click(function(){
         
         $(".filter-list li").removeClass('current')

@@ -10,14 +10,10 @@ body {
     justify-content: space-between;
     height: 100%;
     align-items: stretch;
-}
-
-.left{
-    position: relative;
-    width: 300px;	
-    background-color: #242b2e;
-    z-index: 1;
-    box-shadow: 10px 0 51px rgba(0, 0, 0, 0.6);
+    
+    @media (max-width: 767px){
+        flex-direction: column;
+    }
 }
 
 .right {
@@ -25,6 +21,17 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        flex-direction: column;
+    }
+    
+    @media (max-width: 767px){
+        flex-direction: column;
+        border-width: 10px;
+        padding: 10px 10px 30px 10px;
+        
+    }
 }
 
 .link-list .work {
@@ -43,6 +50,10 @@ body {
     font-size: 24px;
     font-weight: 300;
     line-height: 26px;
+
+    @media (max-width: 767px){ 
+        font-size: 20px;
+    }
 }
 
 
@@ -52,6 +63,16 @@ body {
     flex-basis: 50%;
     border-right: 1px solid #e5e5e5;
     padding-right: 30px;
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        border: none;
+        padding-right: 0;
+    }
+    
+    @media (max-width: 767px){
+        border: none;
+        padding-right: 0;
+    }
 }
 
 .slider-container{
@@ -68,8 +89,6 @@ body {
         }
     }
 }
-
-
 
 .slick-dots{
     width: auto;
@@ -111,11 +130,20 @@ body {
         font-size: 18px;
         font-weight: 300;
         line-height: 30px;
+
+        @media (max-width: 767px){
+            font-size: 16px;
+            line-height: 17px;
+        }
     }
     
     .first-string{
         padding-bottom: 30px;
         padding-top: 10px;
+
+        @media (max-width: 767px){
+            padding-bottom: 7px;
+        }
     }
 }
 
@@ -126,6 +154,9 @@ body {
     img {
         display: block;
         width: 100%;
+    }
+    @media (max-width: 767px){
+        flex-direction: column;
     }
 }
 
@@ -140,6 +171,16 @@ body {
 .right-part {
     flex-basis: 50%;
     padding-left: 30px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 0;
+        padding-top: 30px;
+    }
+    
+    @media (max-width: 767px){
+        padding: 0;
+        padding-top: 10px;
+    }
 }
 
 .project-info div {
@@ -158,6 +199,11 @@ body {
         font-family: Roboto;
         font-size: 14px;
         font-weight: 300;
+    }
+
+    @media (max-width: 767px){
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
 
@@ -180,7 +226,6 @@ body {
 }
 
 .project-info div:hover {
-    
     a {
         color: $maincolor;
     }

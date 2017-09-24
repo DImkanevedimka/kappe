@@ -1,5 +1,23 @@
 $maincolor: #1ab5b3;
 
+.left{
+	position: relative;
+	background-color: #242b2e;
+	z-index: 1;
+	box-shadow: 10px 0 51px rgba(0, 0, 0, 0.6);
+	
+	@media (min-width: 992px) and (max-width: 1199px) {
+		width: 200px;
+	}
+	
+	@media (min-width: 768px) and (max-width: 991px) {
+		width: 200px;
+	}
+
+	@media (max-width: 767px){
+        width: 100%;
+    }
+}
 
 .logo {
 	height: 125px;
@@ -15,18 +33,86 @@ $maincolor: #1ab5b3;
 		text-align: center;
 		line-height: 125px;
 	}
-
+	
 	a{
 		display: block;
 		text-decoration: none;
 	}
+	
+	@media (min-width: 992px) and (max-width: 1199px) {
+		width: 200px;
+	}
+	
+	@media (min-width: 768px) and (max-width: 991px) {
+		width: 200px;
+	}
+
+	@media (max-width: 767px){
+        display: none;
+    }
 }
+
+.logo2 {
+	height: 70px;
+	width: 100%;
+	background-color: white;
+	position: relative;
+	display: none;
+	align-items: center;
+	justify-content: space-between;
+	span {
+		color: #364048;
+		font-family: Roboto;
+		font-size: 29px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 70px;
+		padding-left: 20px;
+	}
+	
+	a{
+		display: block;
+		text-decoration: none;
+	}
+	@media (max-width: 767px){
+		display: flex;
+	}
+}
+
 
 .logo-img {
 	position: absolute;
 	bottom: 30px;
 	left: 130px;
+	
+	@media (min-width: 992px) and (max-width: 1199px) {
+		left: 80px;
+	}
+	
+	@media (min-width: 768px) and (max-width: 991px) {
+		left: 80px;
+	}
+	
+	@media (max-width: 767px){
+		left: 35px;
+		bottom: 5px;
+    }
 }
+
+.toggle-nav{
+	padding-right: 15px;
+
+	i{
+		color: $maincolor;
+		font-size: 35px;
+		display: none;
+	}
+
+	.toggle-on {
+		display: block;
+	}
+}
+
 
 .link-list {
 	display: flex;
@@ -54,29 +140,52 @@ $maincolor: #1ab5b3;
 			z-index: 1;
 		}
 	}
+
+	@media (max-width: 767px){
+        display: none;
+    }
 }
 
 .link-list li:after{
-		content: "";
-		background: none repeat scroll 0 0 #1AB5B3;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: all 0.15s linear 0s;
-    width: 0;
+	content: "";
+	background: none repeat scroll 0 0 #1AB5B3;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transition: all 0.15s linear 0s;
+	width: 0;
 }
 
 .link-list li:hover::after {
-		width: 100%;
+	width: 100%;
 }
+
+.link-list2 {
+	@extend .link-list;
+	display: none;
+	li {
+		min-height: 40px;
+		text-align: center;
+		a {
+			min-height: 40px;
+			line-height: 40px;
+			padding: 0;
+		}
+	}
+}
+
 
 .filter {
 	padding-right: 25px;
 	padding-bottom: 30px;
 	padding-top: 25px;
+
+	@media (max-width: 767px){
+        display: none;
+    }
 }
 
 .filter-heading{
@@ -94,14 +203,14 @@ $maincolor: #1ab5b3;
 .filter-list {
 	text-align: right;
 	li{
-
-			text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
-			font-family: Roboto;
-			font-size: 13px;
-			font-weight: 300;
-			color: #6b7072;
-			padding-top: 14px;
-			cursor: pointer;
+		
+		text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
+		font-family: Roboto;
+		font-size: 13px;
+		font-weight: 300;
+		color: #6b7072;
+		padding-top: 14px;
+		cursor: pointer;
 	}
 }
 
@@ -120,6 +229,18 @@ li.current {
 	justify-content: space-between;
 	padding-right: 25px;
 	padding-left: 50px;
+	@media (min-width: 992px) and (max-width: 1199px) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	@media (max-width: 767px){
+        padding: 0 15%;
+    }
 }
 
 .footer {
@@ -130,4 +251,5 @@ li.current {
 	text-align: right;
 	padding-right: 25px;
 	padding-top: 23px;
+	padding-bottom: 20px;
 }

@@ -7,7 +7,27 @@ include mixins
 		.logo-img
 			img(src="../../img/for-creatives.png", alt="")
 
+.logo2
+	a(href="index.html")
+		span kappe
+		.logo-img
+			img(src="../../img/for-creatives.png", alt="")
+	.toggle-nav
+		i(class="fa fa-bars toggle-on" aria-hidden="true")
+		i(class="fa fa-times" aria-hidden="true")
+
+
+
 nav.link-list
+	ul
+		+link-nav('home','index.html','home')
+		+link-nav('work','work.html','work')
+		+link-nav('about','about.html','about')
+		+link-nav('blog','blog.html','blog')
+		+link-nav('services','services.html','services')
+		+link-nav('contact','contact.html','contact')
+
+nav.link-list2
 	ul
 		+link-nav('home','index.html','home')
 		+link-nav('work','work.html','work')

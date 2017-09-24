@@ -4,21 +4,17 @@ body {
 	overflow: hidden;
 }
 
-
 .wrapper {
 	display: flex;
 	justify-content: space-between;
 	height: 100%;
 	align-items: stretch;
+
+	@media (max-width: 767px){
+        flex-direction: column;
+    }
 }
 
-.left{
-	position: relative;
-	width: 300px;	
-	background-color: #242b2e;
-	z-index: 1;
-	box-shadow: 10px 0 51px rgba(0, 0, 0, 0.6);
-}
 
 .right {
 	width: 100%;
@@ -45,6 +41,18 @@ body {
 		width: 100%;
 		display: block;
 	}
+
+	@media (min-width: 992px) and (max-width: 1199px) {
+		width: 33.3%;
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+		width: 50%;
+	}
+
+	@media (max-width: 767px){
+        width: 100%;
+    }
 }
 
 .portfolio-info-full {
@@ -123,6 +131,11 @@ body {
 		color: #fff;
 		line-height: 61px;
 	}
+
+	@media (max-width: 767px){
+		top:178px;
+		z-index: 1;
+	}
 }
 
 .contact-container{
@@ -132,11 +145,15 @@ body {
 	top: 90px;
 	width: 283px;
 	height: 84px;
-
 	padding-top: 23px;
 	padding-bottom: 23px;
 	padding-left: 18px;
 	display: none;
+
+	@media (max-width: 767px){
+		top:268px;
+		z-index: 1;
+	}
 }
 
 .contact-text{
